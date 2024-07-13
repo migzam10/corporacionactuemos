@@ -1,0 +1,16 @@
+:root {
+    --colorMoradoAzul: #36009A;}
+
+
+.colorP{
+    color: var(--colorMoradoAzul) !important;
+}
+
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: var(--colorMoradoAzul) !important;
+}
+
+.portfolio-link img{
+    min-height: 250px;
+}
