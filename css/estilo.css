@@ -43,3 +43,9 @@ section#contact {
     max-width: 100%;
     font-size: 1.4rem;
 }
+
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--colorAzulClaro) !important;
+  }
