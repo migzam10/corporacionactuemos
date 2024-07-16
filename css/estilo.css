@@ -4,16 +4,17 @@
 }
 
 
-.colorP{
+.colorP {
     color: var(--colorMoradoAzul) !important;
 }
 
 
-#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
     color: var(--colorMoradoAzul) !important;
 }
 
-.portfolio-link img{
+.portfolio-link img {
     min-height: 270px;
 }
 
@@ -27,6 +28,18 @@ section#contact {
     background-color: var(--colorAzulClaro) !important;
 }
 
-.masthead-subheading, .nav-item{
+.masthead-subheading,
+.nav-item {
     font-weight: bold;
+}
+
+#pCorreo {
+    word-wrap: break-word;
+    /* Permite que las palabras largas se dividan y envuelvan en la siguiente línea */
+    overflow-wrap: break-word;
+    /* Alternativa a word-wrap, es más estándar */
+    word-break: break-all;
+    /* Rompe las palabras largas en cualquier punto para ajustarlas */
+    max-width: 100%;
+    font-size: 1.4rem;
 }
