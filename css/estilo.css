@@ -16,3 +16,17 @@
 .portfolio-link img{
     min-height: 270px;
 }
+
+.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--colorAzulClaro) !important;
+}
+
+section#contact {
+    background-color: var(--colorAzulClaro) !important;
+}
+
+.masthead-subheading, .nav-item{
+    font-weight: bold;
+}
