@@ -17,9 +17,10 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/estilo.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://checkout.bold.co/library/boldPaymentButton.js"></script>
 
 </head>
 
@@ -29,8 +30,7 @@
         <div class="container">
             <a class="navbar-brand colorP" href="#page-top"><img src="assets/img/logos/logo.png" alt="..." />&nbsp;
                 Actuemos</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars ms-1"></i>
             </button>
@@ -55,7 +55,7 @@
 
     <!-- Servicios-->
     <section class="page-section" id="services">
-        <div class="container " data-aos="fade-up-right" data-aos-delay="200">
+        <div class="container " data-aos="fade-up-right">
 
             <div class="text-center">
                 <h3 class="section-heading text-uppercase ">Seminario de formación</h3>
@@ -193,35 +193,73 @@
 
     <!--Donaciones-->
     <section class="page-section bg-light" id="donacion">
-        <div class="container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Donaciones</h2><br>
-                <h3 class="section-subheading text-muted">En Actuemos, trabajamos incansablemente para proveer
-                    educación, formación de calidad a niños, niñas, jóvenes y adolescentes en la comunidad con
-                    emprendimiento y innovación. Sin embargo, no podemos lograrlo solos. Tu contribución puede marcar
-                    una gran diferencia en la vida de muchas personas y en nuestro mundo.</h3>
-            </div>
-
+        <div class="container" data-aos="fade-up">
             <div class="row text-center">
-                <img class="img-fluid" src="./assets/img/donacion/cuenta_ahorros.png" alt="Donaciones">
+                <div class="card w-70 mx-auto" id="cardDonaciones">
+                    <div class="card-body">
+                        <h2 class="section-heading text-uppercase colorP" id="tituloDonacion">Donaciones</h2><br>
+                        <p class="card-text section-subheading text-muted">En Actuemos, trabajamos incansablemente para proveer educación, formación de calidad a niños, niñas, jóvenes y adolescentes en la comunidad con emprendimiento y innovación. Sin embargo, no podemos lograrlo solos. Tu contribución puede marcar una gran diferencia en la vida de muchas personas y en nuestro mundo.</p>
+                        <br>
+
+                        <!--form action="modelos/donaciones.php" method="post">
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <label for="exampleFormControlInput1">Nombres y Apellidos</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre">
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="exampleFormControlInput1">Correo electronico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="name@example.com">
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="form-group w-50 mx-auto">
+                                <label for="exampleFormControlInput1">Monto de la donación</label>
+                                <input type="number" class="form-control" id="monto" name="monto">
+                            </div>
+                            <br>
+
+                            </form-->
+
+
+                        <?php
+                        $api_key = 'OvYBoKDXOLamg6A3PEZUCnx3hDD4utxHN7Fyk0S5K9I';
+                        $script_boton = " <div class='centrar-boton'>
+                                                <script
+                                                    data-bold-button=”dark-L” 
+                                                    data-api-key=\"$api_key\"
+                                                ></script> </div>" ;
+
+                        echo $script_boton;
+
+                        ?>
+
+                        <i class="bi bi-hand-index icon-30 colorP"></i>
+                        <i class="bi bi-hand-index icon-30 colorP"></i>
+                        <i class="bi bi-hand-index icon-30 colorP"></i>
+
+                        <br><br><br>
+                        <p class="card-text section-subheading text-muted">Agradecemos Tu Generosidad Cada contribución, grande o
+                            pequeña, nos acerca un paso más a nuestro objetivo. Gracias por tu generosidad y por creer en nuestra misión.
+                            Juntos, podemos hacer un cambio significativo.</p>
+                    </div>
+                </div>
 
             </div>
             <br><br>
             <div class="row text-center">
 
-                <h3 class="section-subheading text-muted">Agradecemos Tu Generosidad
+                <!--h3 class="section-subheading text-muted">Agradecemos Tu Generosidad
                     Cada contribución, grande o pequeña, nos acerca un paso más a nuestro objetivo.
                     Gracias por tu generosidad y por creer en nuestra misión. Juntos, podemos hacer un cambio
-                    significativo.</h3>
+                    significativo.</h3-->
             </div>
         </div>
-
     </section>
 
     <!--Nosotros-->
     <section class="page-section" id="about">
-        <div class="container" data-aos="zoom-in" data-aos-delay="200">
+        <div class="container" data-aos="zoom-in">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Nosotros</h2><br>
                 <h3 class="section-subheading text-muted">Propiciamos la competitividad y el desarrollo integral a
@@ -234,7 +272,7 @@
                         <img class="card-img-top" src="./assets/img/nosotros/mision.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h3 class="card-title">Misión</h3>
-                            <p class="card-text">En nuestra corporación educativa, nos comprometemos a ser un agente de
+                            <p class="card-text text-justify">En nuestra corporación educativa, nos comprometemos a ser un agente de
                                 cambio y transformación social en Colombia, impulsando el emprendimiento autónomo como
                                 motor de desarrollo individual y colectivo. A través de programas educativos innovadores
                                 y personalizados, brindamos a las personas las herramientas, habilidades y conocimientos
@@ -256,7 +294,7 @@
                         <img class="card-img-top" src="./assets/img/nosotros/vision.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h3 class="card-title">Visión</h3>
-                            <p class="card-text">En nuestra visión del futuro, nos vemos como un referente nacional e
+                            <p class="card-text text-justify">En nuestra visión del futuro, nos vemos como un referente nacional e
                                 internacional en la formación de emprendedores autónomos, reconocidos por nuestro
                                 compromiso con la excelencia educativa, la innovación constante y la inclusión de
                                 enfoques diferenciales, incluyendo la dimensión espiritual, en todas nuestras acciones.
@@ -288,10 +326,10 @@
 
     <!-- Contact-->
     <section class="page-section" id="contact">
-        <div class="container" data-aos="zoom-out-down" data-aos-delay="200">
+        <div class="container" data-aos="zoom-out-down">
             <div class="row text-center">
                 <h1 class="text-white">Contáctanos</h1>
-                
+
             </div>
             <br><br>
             <div class="row text-center">
@@ -306,12 +344,9 @@
             <div class="row align-items-center">
                 <div class="col-lg-4 text-lg-start">Copyright &copy;</div>
                 <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-white btn-social mx-2" href="#!" aria-label="Twitter"><i
-                            class="fab fa-twitter"></i></a>
-                    <a class="btn btn-white btn-social mx-2" href="#!" aria-label="Facebook"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-white btn-social mx-2" href="#!" aria-label="LinkedIn"><i
-                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-white btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-white btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-white btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <div class="col-lg-4 text-lg-end">
                     <a class="link-dark text-decoration-none me-3" href="#!"></a>

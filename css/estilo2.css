@@ -1,0 +1,33 @@
+:root {
+    --colorMoradoAzul: #312780;
+    --colorAzulClaro: #2475b6;
+}
+
+/*Nav*/
+
+.navbar{
+    /*background-color: var(--colorMoradoAzul) !important;*/
+    background-color: var(--colorAzulClaro) !important;
+}
+
+.navbar-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.navbar-brand img {
+    height: 2.2rem;
+}
+
+.navbar-nav li a{
+    color: white;
+    font-size: 1.1rem;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
+}
+.navbar-nav li :hover {
+    color: var(--colorMoradoAzul);
+}
